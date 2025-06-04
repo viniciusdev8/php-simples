@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reajuste de Preço</title>
+</head>
+<body>
+    <form action="main.php" method="post">
+        <div class="reaj">
+            <input type="text" name="produto" placeholder="Nome do produto" required>
+            <br>
+            <input type="number" name="custo" placeholder="Custo do produto" step="0.01" min="0" lang="pt-br" required>
+            <br>
+            <input type="number" name="reajuste" min="0.1" max="100" step="0.01" placeholder="%" lang="pt-br" required>
+            <br>
+            <input type="submit" value="Reajustar">
+        </div>
+    </form>
+</body>
+</html>
